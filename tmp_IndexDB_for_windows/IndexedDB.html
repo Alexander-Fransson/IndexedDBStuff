@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexedDB Testing Page</title>
+    <!-- <script src="./templateindexedDB.js" defer></script> -->
+    <!-- <script src="./testingImageHandling.js" defer></script> -->
+    <script src="../node_modules/jszip/dist/jszip.js" defer></script>
+    <script src="./tmp_windows.device.storage.js" defer></script>
+    <script src="./tmp_utils.schedule.js" defer></script>
+    <script src="./tests.js" defer></script>
+</head>
+<body>
+
+    <iframe src="http://127.0.0.1:5500/dist/browser/index.html" frameborder="0"></iframe>
+    
+    <!-- <form id="image_submit_form">
+        <input 
+            id="inputFile" 
+            type="file" 
+            accept=".jpg, .png, .gif, .mp4, .avi, .mov, .txt" 
+            required
+        >
+        
+        <input type="submit" value="click me">
+    </form> -->
+
+    <h1>realTests</h1>
+
+    <button id="getobjecturl">object url</button>
+
+    <h1>Utils Tests</h1>
+
+    <button id="screenshot">screenshot</button>
+    <img id="test_screenshot" src="" alt="">
+    <button id="uid">get unique id</button>
+    <button id="reload">reload</button>
+    <button id="info">info</button>
+    <button id="connection">connection</button>
+    <button id="ip">ip</button>
+    <br>
+    <div>
+        <input type="text" id="brightness" placeholder="brightness">
+        <button id="set_br">set</button>
+    </div>
+
+    <h1>Storage Testing</h1>
+
+    <input type="text" placeholder="path" id="path">
+    <button id="create_btn">create obs</button>
+    <br>
+    <input type="text" placeholder="folder / new name" id="folder">
+    <button id="delete_btn">delete obs</button>
+    <br>
+    <input type="text" id="file" placeholder="data">
+    <button id="add_file">write</button>
+    <br>
+    <input type="text" id="file_name" placeholder="name">
+    <button id="del_file">rm file</button>
+    <br>
+    <input type="text" id="file_type" placeholder="type">
+    <button id="get_file_list">list files</button>
+    <br>
+    <button id="read_file">read</button>
+    <button id="download">download</button>
+    <button id="existance_check">exists</button>
+    <br>
+    <button id="check_mem">capacity</button>
+    <button id="fire_signal">interupt</button>
+    <button id="unzip">unzip</button>
+    <br>
+    <button id="create_zip">create ziped file</button>
+    <button id="rename">rename</button>
+</body>
+</html>
